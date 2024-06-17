@@ -1,0 +1,44 @@
+.case {
+  padding-bottom: 90px;
+}
+.case__img {
+  max-width: 100%;
+  & img {
+    width: 100%;
+  }
+}
+.case__splide-row {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: rgb(22, 21, 21);
+  font-size: 15.63px;
+  font-weight: 600;
+  transition: all .3s;
+  line-height: 23px;
+  margin-top: 45px;
+
+  &-cub {
+    border: 1px solid rgb(22, 21, 21);
+    border-radius: 10px;
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 17px;
+    transition: all .3s;
+  }
+  & .case__splide-cubs {
+    min-width: 14px;
+    min-height: 14px;
+    background: rgb(22, 21, 21);
+    display: block;
+    transition: all .3s;
+  }
+  &:hover .case__splide-row-cub {
+    background: rgb(22, 21, 21);
+  }
+  &:hover .case__splide-cubs {
+    background: #Fff;
+  }
+}
