@@ -1,0 +1,408 @@
+.services {
+  padding: 150px 0;
+  &__line {
+    margin-bottom: 25px;
+  }
+}
+.services__info {
+  max-width: 738px;
+  margin-left: auto;
+  &-title {
+    color: rgb(22, 21, 21);
+    font-family: Inter;
+    font-size: 56.07px;
+    font-weight: 500;
+    line-height: 90px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &-group {
+    display: flex;
+  }
+  &-description {
+    color: rgb(22, 21, 21);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 358px;
+    & span {
+      font-weight: 700;
+    }
+  }
+  & .first-description {
+    margin-right: 22px;
+  }
+}
+.services__splide-slide {
+  min-height: 721px;
+  max-height: 721px;
+  position: relative;
+}
+.services__body {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
+}
+.services__wrap {
+  max-width: 1540px;
+  margin-left: auto;
+  width: 100%;
+  padding-top: 111px;
+}
+.services__nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+  &-arrow {
+    width: 29px; height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    background: transparent;
+  }
+  .services__arrow-prev {
+    margin-right: 11px;
+  }
+}
+.splide__track{
+  overflow: visible !important;
+}
+.slide-one {
+  border: 1px solid rgb(22, 21, 21);
+  border-radius: 10px;
+  padding: 40px 17px 40px 40px;
+  max-width: 679px;
+  & .slide-one-description {
+    max-width: 482px;
+    margin-bottom: 30px;
+    font-size: 15.13px;
+  }
+  & .slide-one-included {
+    color: rgb(0, 0, 0);
+    font-size: 15.63px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 18px;
+  }
+  & .slide-one-prise {
+    color: rgb(0, 0, 0);
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 30px;
+  }
+  & .slide-one-num {
+    color: rgb(0, 0, 0);
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 17px;
+  }
+  & .slide-one-subtitle {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  & .slide-one-subject {
+    color: rgb(0, 0, 0);
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 13px;
+  }
+  & .slide-one-col {
+    display: flex;
+    justify-content: space-between;
+  }
+  & .slide-one-descipt {
+    font-size: 15.13px;
+    margin-right: 25px;
+    &:last-child {
+      max-width: 322px;
+      margin: 0;
+    }
+  } 
+  & .slide-one-descripti {
+    margin-top: 14px;
+    font-size: 15.13px;
+    max-width: 407px;
+    margin-bottom: 100px;
+  }
+}
+.slide-two {
+  border: 1px solid rgb(22, 21, 21);
+  border-radius: 10px;
+  padding: 40px 55px 40px 40px;
+  max-width: 679px;
+  width: 100%;
+  & .slide-two-num {
+    color: rgb(0, 0, 0);
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 17px;
+  }
+  & .slide-two-subtitle {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 30px;
+    max-width: 411px;
+    text-transform: uppercase;
+  }
+  & .slide-two-subject {
+    color: rgb(0, 0, 0);
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 13px;
+  }
+  & .slide-two-description {
+    font-size: 15.13px;
+    max-width: 407px;
+    margin-bottom: 30px;
+  }
+  & .slide-two-prise {
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 16px;
+    & span {
+      font-weight: 600;
+    }
+  }
+  & .slide-two-warning {
+    font-size: 13.67px;
+    color: #000;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 30px;
+    max-width: 427px;
+  }
+  & .slide-two-included {
+    margin-bottom: 19px;
+    font-size: 15.63px;
+    font-weight: 600;
+    line-height: 23px;
+    color: #000;
+  }
+  & .slide-two-col {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    text-align: left;
+    & .services-list-one {
+      max-width: 313px;
+      & li {
+        margin-bottom: 18px;
+        font-size: 15.13px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    & .services-list-two {
+      max-width: 218px;
+      & li {
+        margin-bottom: 11px;
+        font-size: 15.13px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+.slide-three {
+  border: 1px solid rgb(22, 21, 21);
+  border-radius: 10px;
+  padding: 40px 55px 40px 40px;
+  max-width: 679px;
+  width: 100%;
+  & .slide-three-num {
+    color: rgb(0, 0, 0);
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 17px;
+  }
+  & .slide-three-subtitle {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 30px;
+    max-width: 411px;
+    text-transform: uppercase;
+  }
+  & .slide-three-subject {
+    color: rgb(0, 0, 0);
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 13px;
+  }
+  & .slide-three-description {
+    font-size: 15.13px;
+    max-width: 407px;
+    margin-bottom: 30px;
+  }
+  & .slide-three-prise {
+    color: #000;
+    font-weight: 400;
+    font-size: 15.25px;
+    line-height: 15px;
+    margin-bottom: 35px;
+    max-width: 500px;
+    line-height: 1.5;
+    & span {
+      font-weight: 700;
+    }
+  }
+  & .slide-three-included {
+    margin-bottom: 19px;
+    font-size: 15.63px;
+    font-weight: 600;
+    line-height: 23px;
+    color: #000;
+  }
+  & .slide-three-col {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    & ul {
+      max-width: 270px;
+    }
+    & .slide-three-list {
+      & li {
+        margin-bottom: 11px;
+        font-size: 15.25px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #000;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+.slide-four {
+  border: 1px solid rgb(22, 21, 21);
+  border-radius: 10px;
+  padding: 40px 55px 40px 40px;
+  max-width: 679px;
+  width: 100%;
+  & .slide-four-num {
+    color: rgb(0, 0, 0);
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 17px;
+  }
+  & .slide-four-subtitle {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 30px;
+    max-width: 411px;
+    text-transform: uppercase;
+  }
+  & .slide-four-subject {
+    color: rgb(0, 0, 0);
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 13px;
+  }
+  & .slide-four-description {
+    font-size: 15.13px;
+    max-width: 407px;
+    margin-bottom: 30px;
+  }
+  & .slide-four-prise {
+    color: #000;
+    font-weight: 400;
+    font-size: 15.25px;
+    line-height: 15px;
+    margin-bottom: 35px;
+    max-width: 500px;
+    line-height: 1.5;
+    max-width: 520px;
+    & span {
+      font-weight: 700;
+    }
+  }
+  & .slide-four-included {
+    margin-bottom: 19px;
+    font-size: 15.63px;
+    font-weight: 600;
+    line-height: 23px;
+    color: #000;
+  }
+  & .slide-four-col {
+    margin-bottom: 130px;
+  }
+  & .slide-four-list {
+    & ul {
+      max-width: 403px;
+    }
+    & li {
+      margin-bottom: 12px;
+      font-size: 15.13px;
+      color: #000;
+      font-weight: 400;
+      line-height: 23px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+.services__splide-row {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: rgb(22, 21, 21);
+  font-size: 15.63px;
+  font-weight: 600;
+  transition: all .3s;
+  line-height: 23px;
+  &-cub {
+    border: 1px solid rgb(22, 21, 21);
+    border-radius: 10px;
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 17px;
+    transition: all .3s;
+  }
+  & .services__splide-cubs {
+    min-width: 14px;
+    min-height: 14px;
+    background: rgb(22, 21, 21);
+    display: block;
+    transition: all .3s;
+  }
+  &:hover .services__splide-row-cub {
+    background: rgb(22, 21, 21);
+  }
+  &:hover .services__splide-cubs {
+    background: #Fff;
+  }
+}
+
+ 
