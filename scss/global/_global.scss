@@ -35,3 +35,11 @@ body {
     background: var(--dark-col);
   }
 }
+.section-backround {
+  height: 1092px;
+  background: url("../images/project.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
