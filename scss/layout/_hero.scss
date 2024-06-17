@@ -1,0 +1,22 @@
+.hero {
+  height: 1140px;
+  &__top {
+    display: flex;
+  }
+  &__inner {
+    height: 1010px;
+    padding-top: 25px;
+    background: url("../images/hero-bgc.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.hero__group {
+  margin-right: 18px;
+  &-title {
+    margin-bottom: 25px;
+  }
+}
+.hero__description {
+  max-width: 250px;
+}

@@ -1,5 +1,6 @@
 .header {
   padding: 10px 0;
+  margin-bottom: 60px;
   &__container {
     @include flex-default;
   }
