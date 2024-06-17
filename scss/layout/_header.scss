@@ -1,0 +1,46 @@
+.header {
+  padding: 10px 0;
+  &__container {
+    @include flex-default;
+  }
+  &__left {
+    @include flex-itcenter;
+  }
+}
+.header__nav {
+  margin-left: 90px;
+  &-list {
+    @include flex-itcenter;
+  }
+  &-item {
+    margin-right: 46px;
+    &:last-child {
+      margin: 0;
+    }
+    & a {
+      color: var(--black-col);
+      font-weight: 400;
+      line-height: 29px;
+      letter-spacing: 0%;
+      text-align: left;
+      text-transform: uppercase;
+    }
+  }
+}
+.header__button {
+  color: var(--dark-col);
+  border: 1px solid var(--dark-col);
+  border-radius: 10px;
+  padding: 13px 0;
+  width: 100%;
+  max-width: 220px;
+  background: transparent;
+  font-weight: 600;
+  line-height: 24.8px;
+  text-transform: uppercase;
+  transition: all .3s;
+  &:hover {
+    background: var(--dark-col);
+    color: var(--white-col);
+  }
+}
