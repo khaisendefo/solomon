@@ -1,3 +1,118 @@
 .contact {
-  
+  padding: 298px 0 202px;
+  background: url("../images/contact-bck.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__title {
+    color: var(--dark-col);
+    font-size: 51.7px;
+    font-weight: 500;
+    line-height: 81px;
+    text-transform: uppercase;
+    text-align-last: right;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    text-align: center;
+    color: var(--dark-col);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+}
+.contact__box {
+  border-radius: 10px;
+  background: rgb(245, 245, 245);
+  padding: 54px 58px 25px;
+}
+.contact__row {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__info {
+  max-width: 430px;
+  &-description {
+    color: #000;
+    font-size: 15.38px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+  &-social {
+    display: flex;
+    margin-top: 15px;
+    & .contact__info-link {
+      color: var(--dark-col);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 31px;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+  &-telegram {
+    margin-left: 56px;
+  }
+}
+.contact__right {
+  max-width: 502px;
+  &-description {
+    font-size: 15.63px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #000;
+    margin-bottom: 33px;
+  }
+}
+.contact__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  &-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 19px;
+    &:last-child {
+      margin: 0;
+    }
+    & span {
+      font-size: 13.23px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #000;
+      margin-bottom: 4.5px;
+    }
+  }
+  &-input {
+    width: 100%;
+    height: 52px;
+    border: 1px solid var(--dark-col);
+    background: rgba(245, 245, 245);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #000;
+    padding: 0 15px;
+  }
+  &-button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--dark-col);
+    border-radius: 10px;
+    background: rgba(245, 245, 245);
+    color: var(--dark-col);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-privacy {
+    color: rgb(118, 118, 118);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 4.5px;
+  }
 }
