@@ -1,0 +1,109 @@
+.privacy {
+  padding: 20px 0 133px;
+}
+.privacy__top {
+  &-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px;
+  }
+  &-title {
+    color: rgb(0, 0, 0);
+    font-size: 56.98px;
+    font-weight: 500;
+    line-height: 64px;
+    text-transform: uppercase;
+    max-width: 700px;
+  }
+  &-description {
+    color: rgb(0, 0, 0);
+    font-size: 17.02px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 251px;
+    margin: 0 auto;
+  }
+}
+.privacy__img {
+  max-width: 100%;
+  margin: 19px 0 30px;
+  & img {
+    width: 100%;
+  }
+}
+.privacy__info {
+  &-title {
+    font-size: 25.7px;
+    font-weight: 500;
+    color: #000;
+    line-height: 31px;
+    text-transform: uppercase;
+    max-width: 659px;
+  }
+  &-row {
+    margin-top: 23px;
+    display: flex;
+  }
+  & .privacy-col-1 {
+    max-width: 560px;
+    margin-right: 41px;
+    & .privacy__info-description {
+      color: #000;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 23px;
+    }
+    & .privacy__info-img {
+      max-width: 560px;
+      margin: 31px 0 30px;
+      & img {
+        width: 100%;
+      }
+    }
+    & .privacy__info-name {
+      color: #000;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    & .privacy__info-text {
+      color: #000;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
+  & .privacy-col-2 {
+    max-width: 560px;
+    & .privacy__info-description {
+      color: #000;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 23px;
+      max-width: 419px;
+    }
+    & .privacy__info-img {
+      max-width: 560px;
+      margin: 80px 0 30px;
+      & img {
+        width: 100%;
+      }
+    }
+    & .privacy__info-name {
+      color: #000;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    & .privacy__info-text {
+      color: #000;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
+}
