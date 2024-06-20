@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/images/logo.svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <link rel="stylesheet" href="src/css/aos.css">
   <link rel="stylesheet" href="src/css/splide.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Solomon</title>
@@ -15,7 +16,7 @@
        <div class="header__inner">
          <div class="header__container container">
            <div class="header__left">
-             <a class="header__logo" href="#">
+             <a class="header__logo" href="index.html">
                <img src="assets/images/logo.svg" alt="Logo">
              </a>
              <button class="header__toggle">
@@ -27,16 +28,16 @@
                   <a class="header__nav-link" href="#">Главная</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Услуги</a>
+                  <a class="header__nav-link" href="#services">Услуги</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Кейсы</a>
+                  <a class="header__nav-link" href="case.html#home">Кейсы</a>
                 </li>
                </ul>
-               <button class="header__button">Обсудить проект</button>
+               <button class="header__button open-modal">Обсудить проект</button>
              </nav>
            </div>
-           <button class="header__button">Обсудить проект</button>
+           <button class="header__button open-modal">Обсудить проект</button>
          </div>
        </div>
     </header>
@@ -46,14 +47,14 @@
           <div class="hero_container container">
             <div class="hero__top">
               <div class="hero__group">
-                <div class="hero__group-title">
+                <div class="hero__group-title" data-aos="fade-up">
                   <img src="assets/images/title.png" alt="title">
                 </div>
-                <div class="hero__group-subtitle">
+                <div class="hero__group-subtitle" data-aos="fade-up">
                   <img src="assets/images/subtitle.png" alt="subtitle">
                 </div>
               </div>
-              <p class="hero__description description">Построим дом, который станет вашим местом силы</p>
+              <p class="hero__description description" data-aos="fade-up" data-aos-delay="300">Построим дом, который станет вашим местом силы</p>
             </div>
           </div>
         </div>
@@ -67,17 +68,17 @@
             </div>
             <div class="founder__body">
               <div class="founder__person">
-                <div class="founder__person-img">
+                <div class="founder__person-img"  data-aos="fade-right">
                   <img src="assets/images/founder.jpg" alt="Основатель">
                 </div>
-                <div class="founder__person-info description">
+                <div class="founder__person-info description"  data-aos="fade-up">
                   <span>Алексей Малярчук,</span> основатель СОЛОМОН
                 </div>
               </div>
               <div class="founder__text">
-                <p class="founder__description description">Любой дом — больше, чем стены и крыша. Это и атмосфера, царящая внутри, и эмоции, которые мы испытываем, поворачивая ключ в замке входной двери, и воспоминания, связанные с каждой деталью.</p>
-                <p class="founder__description description">Собственный дом может стать настоящим местом силы, если построен с любовью. Местом, в котором вы чувствуете себя в безопасности, потому что знаете, что каждая деталь сделана качественно. Местом, которое долгие годы служит для встреч с близкими людьми. Местом, которое приносит радость одним своим видом, ведь всё в нём сделано так, как хотели именно вы.</p>
-                <p class="founder__description description">Компания СОЛОМОН помогает строить именно такие дома. <span>Для тех, кто хочет большего. Для жизни. Для любви.</span></p>
+                <p class="founder__description description" data-aos="fade-up">Любой дом — больше, чем стены и крыша. Это и атмосфера, царящая внутри, и эмоции, которые мы испытываем, поворачивая ключ в замке входной двери, и воспоминания, связанные с каждой деталью.</p>
+                <p class="founder__description description" data-aos="fade-up">Собственный дом может стать настоящим местом силы, если построен с любовью. Местом, в котором вы чувствуете себя в безопасности, потому что знаете, что каждая деталь сделана качественно. Местом, которое долгие годы служит для встреч с близкими людьми. Местом, которое приносит радость одним своим видом, ведь всё в нём сделано так, как хотели именно вы.</p>
+                <p class="founder__description description" data-aos="fade-up">Компания СОЛОМОН помогает строить именно такие дома. <span>Для тех, кто хочет большего. Для жизни. Для любви.</span></p>
               </div>
             </div>
           </div>
@@ -88,53 +89,53 @@
         <div class="advantages__inner">
           <div class="advantages__container container">
             <div class="advantages__timber">
-              <h2 class="advantages__timber-name advantages-name">Мы используем двойной брус, поскольку он имеет ряд преимуществ:</h2>
+              <h2 class="advantages__timber-name advantages-name" data-aos="fade-right">Мы используем двойной брус, поскольку он имеет ряд преимуществ:</h2>
               <div class="advantages__timber-grid">
                 <ul class="advantages__timber-list">
-                  <li class="advantages__timber-item">прочность и долговечность — дома служат от 50 лет в отличие от, например, газобетонных, обладающих сниженной устойчивостью к влажности и морозам;</li>
-                  <li class="advantages__timber-item">качественная тепло- и ветроизоляция — дома очень тёплые и отлично подходят в холодный сезон;</li>
-                  <li class="advantages__timber-item">простота и скорость возведения — сборка дома занимает немного времени по сравнению с большинством других технологий и не требует спецтехники;</li>
-                  <li class="advantages__timber-item">не требуется отделка — достаточно покрасить и зашлифовать стены, в итоге такие дома получаются выгоднее, например, каркасных на 15%;</li>
+                  <li class="advantages__timber-item" data-aos="fade-up">прочность и долговечность — дома служат от 50 лет в отличие от, например, газобетонных, обладающих сниженной устойчивостью к влажности и морозам;</li>
+                  <li class="advantages__timber-item" data-aos="fade-up">качественная тепло- и ветроизоляция — дома очень тёплые и отлично подходят в холодный сезон;</li>
+                  <li class="advantages__timber-item" data-aos="fade-up">простота и скорость возведения — сборка дома занимает немного времени по сравнению с большинством других технологий и не требует спецтехники;</li>
+                  <li class="advantages__timber-item" data-aos="fade-up">не требуется отделка — достаточно покрасить и зашлифовать стены, в итоге такие дома получаются выгоднее, например, каркасных на 15%;</li>
                 </ul>
                 <ul class="advantages__timber-list advantages-last-list">
-                  <li class="advantages__timber-item">небольшой вес, позволяющий устанавливать дом на свайный фундамент вместо капитального;</li>
-                  <li class="advantages__timber-item">экологичность — мы используем только натуральные материалы, что не только безопасно для природы, но и позволяет избавиться от конденсата внутри помещений за счёт микропор в древесине;</li>
-                  <li class="advantages__timber-item">эстетика — дома выглядят современно и более стильно, чем построенные по устаревающим технологиям.</li>
+                  <li class="advantages__timber-item" data-aos="fade-up">небольшой вес, позволяющий устанавливать дом на свайный фундамент вместо капитального;</li>
+                  <li class="advantages__timber-item" data-aos="fade-up">экологичность — мы используем только натуральные материалы, что не только безопасно для природы, но и позволяет избавиться от конденсата внутри помещений за счёт микропор в древесине;</li>
+                  <li class="advantages__timber-item" data-aos="fade-up">эстетика — дома выглядят современно и более стильно, чем построенные по устаревающим технологиям.</li>
                 </ul>
               </div>
             </div>
             <div class="advantages__flaw">
-              <h3 class="advantages__flaw-name advantages-name">Недостаток технологии «двойной брус»:</h3>
+              <h3 class="advantages__flaw-name advantages-name" data-aos="fade-right">Недостаток технологии «двойной брус»:</h3>
               <div class="advantages__flaw-grid">
-                <p class="advantages__flaw-description">сложность ремонта в случае выхода из строя отдельных элементов, однако такую проблему можно предотвратить, выбрав надёжного подрядчика, который обработает дерево антисептическими составами и защитными покрытиями.</p>
-                <p class="advantages__flaw-description advantages-last-list">Таким образом, при должном внимании к подбору и обработке материалов, двойной брус — оптимальный вариант с точки зрения соотношения цены и качества дома. Поэтому мы любим и используем эту технологию.</p>
+                <p class="advantages__flaw-description" data-aos="fade-up">сложность ремонта в случае выхода из строя отдельных элементов, однако такую проблему можно предотвратить, выбрав надёжного подрядчика, который обработает дерево антисептическими составами и защитными покрытиями.</p>
+                <p class="advantages__flaw-description advantages-last-list" data-aos="fade-up">Таким образом, при должном внимании к подбору и обработке материалов, двойной брус — оптимальный вариант с точки зрения соотношения цены и качества дома. Поэтому мы любим и используем эту технологию.</p>
               </div>
             </div>
             <div class="advantages__myths">
-              <h4 class="advantages__myths-name advantages-name">Развеем также 3 распространённых мифа о домах из «двойного бруса».</h4>
+              <h4 class="advantages__myths-name advantages-name" data-aos="fade-right">Развеем также 3 распространённых мифа о домах из «двойного бруса».</h4>
               <div class="advantages__myths-grid">
                 <div class="advantages__myths-box one-box">
-                  <div class="advantages__myths-name">Трещины</div>
-                  <p class="advantages__myths-description">В текстуре натурального дерева присутствуют мелкие неопасные трещинки. Однако значительные трещины — просто-напросто брак. Чтобы его избежать, важно выбирать проверенного производителя стенокомплекта, который соблюдает все необходимые нормы и правила в процессе его создания.</p>
+                  <div class="advantages__myths-name" data-aos="fade-up">Трещины</div>
+                  <p class="advantages__myths-description" data-aos="fade-up">В текстуре натурального дерева присутствуют мелкие неопасные трещинки. Однако значительные трещины — просто-напросто брак. Чтобы его избежать, важно выбирать проверенного производителя стенокомплекта, который соблюдает все необходимые нормы и правила в процессе его создания.</p>
                 </div>
                 <div class="advantages__myths-box two-box">
-                  <div class="advantages__myths-name">Щели</div>
-                  <p class="advantages__myths-description">Доска из натуральной древесины «дышит»: зимой отдаёт влагу и усыхает на 1-1,5%, а летом впитывает и разбухает. Сохранить эту возможность и в то же время избежать излишней подвижности помогают вертикальные монтажные стойки, к которым каждая доска прикручивается в нескольких местах. Так образование щелей становится невозможным.</p>
+                  <div class="advantages__myths-name" data-aos="fade-up">Щели</div>
+                  <p class="advantages__myths-description" data-aos="fade-up">Доска из натуральной древесины «дышит»: зимой отдаёт влагу и усыхает на 1-1,5%, а летом впитывает и разбухает. Сохранить эту возможность и в то же время избежать излишней подвижности помогают вертикальные монтажные стойки, к которым каждая доска прикручивается в нескольких местах. Так образование щелей становится невозможным.</p>
                 </div>
                 <div class="advantages__myths-box three-box">
-                  <div class="advantages__myths-name">Усадка утеплителя</div>
-                  <p class="advantages__myths-description">Эковата может дать усадку только при неправильной технологии задува. Решающее значение в этом процессе имеет мощность, поэтому, например, при утеплении под давлением с помощью машинного способа, риск усадки сводится к нулю.</p>
+                  <div class="advantages__myths-name" data-aos="fade-up">Усадка утеплителя</div>
+                  <p class="advantages__myths-description" data-aos="fade-up">Эковата может дать усадку только при неправильной технологии задува. Решающее значение в этом процессе имеет мощность, поэтому, например, при утеплении под давлением с помощью машинного способа, риск усадки сводится к нулю.</p>
                 </div>
               </div>
               <div class="advantages__myths-row">
-                <p class="advantages__myths-row_description">Сегодня строительный рынок предлагает массу вариантов домов- конструкторов, подчёркивая простоту и удобство такого метода. Дома из двойного бруса возводятся по тому же принципу, <span>однако мы хотим подчеркнуть критически важный нюанс:</span></p>
-                <p class="advantages__myths-row_description">в нашем климате таким постройкам необходимо усиление конструкции, иначе со временем доски разойдутся и дом мечты обернётся разочарованием. <span>Обязательно обратите своё внимание на этот момент при выборе строительной компании:</span> если она не делает усиление, обращаться туда не стоит.</p>
+                <p class="advantages__myths-row_description" data-aos="fade-up">Сегодня строительный рынок предлагает массу вариантов домов- конструкторов, подчёркивая простоту и удобство такого метода. Дома из двойного бруса возводятся по тому же принципу, <span>однако мы хотим подчеркнуть критически важный нюанс:</span></p>
+                <p class="advantages__myths-row_description" data-aos="fade-up">в нашем климате таким постройкам необходимо усиление конструкции, иначе со временем доски разойдутся и дом мечты обернётся разочарованием. <span>Обязательно обратите своё внимание на этот момент при выборе строительной компании:</span> если она не делает усиление, обращаться туда не стоит.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="services__inner">
           <div class="services__container container">
             <div class="services__top">
@@ -143,10 +144,10 @@
                 <div class="services__line-row horizontal-line-row"></div>
               </div>
               <div class="services__info">
-                <h2 class="services__info-title">УСЛУГИ</h2>
+                <h2 class="services__info-title" data-aos="fade-right">УСЛУГИ</h2>
                 <div class="services__info-group">
-                  <p class="services__info-description first-description">Компания СОЛОМОН специализируется на строительстве частных домов и коттеджей с использованием технологии <span>«двойной брус».</span></p>
-                  <p class="services__info-description">Выбор технологии связан с материалом, из которого строится дом. Например, кирпич, газобетон или готовый каркас.</p>
+                  <p class="services__info-description first-description" data-aos="fade-up">Компания СОЛОМОН специализируется на строительстве частных домов и коттеджей с использованием технологии <span>«двойной брус».</span></p>
+                  <p class="services__info-description" data-aos="fade-up">Выбор технологии связан с материалом, из которого строится дом. Например, кирпич, газобетон или готовый каркас.</p>
                 </div>
               </div>
             </div>
@@ -181,7 +182,7 @@
                       <p class="services__splide-col_description slide-one-descipt description">консультирование по подходящей транспортной компании для перевозки материалов (в случае, если вы уже заказали их самостоятельно)</p>
                     </div>
                     <p class="services__splide-description slide-one-descripti description">контакты проверенных специалистов по различным видам работ, связанных с постройкой дома</p>
-                    <button class="services__splide-row">
+                    <button class="services__splide-row open-modal">
                       <div class="services__splide-row-cub">
                         <div class="services__splide-cubs"></div>
                       </div>
@@ -207,7 +208,7 @@
                         <li class="description">планировка с указаниемразмеров и 3D-визуализацией</li>
                       </ul>
                     </div>
-                    <button class="services__splide-row">
+                    <button class="services__splide-row open-modal">
                       <div class="services__splide-row-cub">
                         <div class="services__splide-cubs"></div>
                       </div>
@@ -240,7 +241,7 @@
                         <li>дополнительные пиломатериалы</li>
                       </ul>
                     </div>
-                    <button class="services__splide-row">
+                    <button class="services__splide-row open-modal">
                       <div class="services__splide-row-cub">
                         <div class="services__splide-cubs"></div>
                       </div>
@@ -263,7 +264,7 @@
                         <li>возможность обратиться к куратору по люому вопросу в любой момент</li>
                       </ul>
                     </div>
-                    <button class="services__splide-row">
+                    <button class="services__splide-row open-modal">
                       <div class="services__splide-row-cub">
                         <div class="services__splide-cubs"></div>
                       </div>
@@ -326,12 +327,12 @@
               </ul>
             </div>
           </div>
-          <button class="gallery__splide-row">
+          <a class="gallery__splide-row open-modal" href="case.html#home">
             <div class="gallery__splide-row-cub">
               <div class="gallery__splide-cubs"></div>
             </div>
-            Заказать
-          </button>
+            ПРИМЕРЫ РАБОТ
+          </a>
         </div>
       </section>
       <section class="totem">
@@ -342,41 +343,41 @@
                 <div class="totem__line-circle horizontal-line-circle"></div>
                 <div class="totem__line-row horizontal-line-row"></div>
               </div>
-              <h2 class="totem__top-title">как создаются дома с тотем</h2>
+              <h2 class="totem__top-title" data-aos="fade-right">как создаются дома с тотем</h2>
             </div>
             <div class="totem__body">
               <div class="totem__col col-1">
-                <h3 class="totem__col-item">Первая встреча — это знакомство, на котором мы находим общее видение.</h3>
+                <h3 class="totem__col-item" data-aos="fade-right">Первая встреча — это знакомство, на котором мы находим общее видение.</h3>
                 <div class="totem__col-box">
                   <ul class="totem__col-list totem-col-list-1">
-                    <li class="totem__col-description totem-li-1">О чём вы мечтаете? Что вас вдохновляет? Что означает для вас собственный дом? Мы помогаем сориентироваться в том, как реализовать ваш проект: рассчитываем стоимость и сроки.</li>
-                    <li class="totem__col-description totem-li-1"><strong>Понятно объясняем принципы технологии строительства</strong> и процесс производства и закупки необходимых материалов по оптимальной цене.</li>                  
+                    <li class="totem__col-description totem-li-1" data-aos="fade-up">О чём вы мечтаете? Что вас вдохновляет? Что означает для вас собственный дом? Мы помогаем сориентироваться в том, как реализовать ваш проект: рассчитываем стоимость и сроки.</li>
+                    <li class="totem__col-description totem-li-1" data-aos="fade-up"><strong>Понятно объясняем принципы технологии строительства</strong> и процесс производства и закупки необходимых материалов по оптимальной цене.</li>                  
                   </ul>
                   <ul class="totem__col-list totem-col-list-2">
-                    <li class="totem__col-description totem-li-1"><strong>Планируем дополнительные расходы</strong>на  электро- и сантехнические работы.</li>
-                    <li class="totem__col-description totem-li-1">После этого вы можете взять время, чтобы всё обдумать и спланировать бюджет, а если уже готовы — сразу же <strong>начинаем увлекательный процесс создания дома вашей мечты.</strong></li>
+                    <li class="totem__col-description totem-li-1" data-aos="fade-up"><strong>Планируем дополнительные расходы</strong>на  электро- и сантехнические работы.</li>
+                    <li class="totem__col-description totem-li-1" data-aos="fade-up">После этого вы можете взять время, чтобы всё обдумать и спланировать бюджет, а если уже готовы — сразу же <strong>начинаем увлекательный процесс создания дома вашей мечты.</strong></li>
                   </ul>
                 </div>
               </div>
               <div class="totem__col col-2">
-                <h3 class="totem__col-item">СОЛОМОН придерживается политики прозрачных цен.</h3>
+                <h3 class="totem__col-item" data-aos="fade-right">СОЛОМОН придерживается политики прозрачных цен.</h3>
                 <div class="totem__col-box">
                   <ul class="totem__col-list totem-list-2">
-                    <li class="totem__col-desciption totem-li-2"><strong>Мы напрямую связываем клиентов с заводом-изготовителем стенокомплекта,</strong> который начинает работу по частичной предоплате.</li>
-                    <li class="totem__col-desciption totem-li-2"><strong>В то же время мы рассчитываем подробную смету: стоимость работ и материалов.</strong> На этом этапе мы сравниваем полученную сумму с вашим бюджетом и действуем в зависимости от обстоятельств: можем уменьшить площадь, изменить конфигурацию дома или заменить некоторые материалы.</li>
-                    <li class="totem__col-desciption totem-li-2">Один из наших принципов заключается в том, чтобы клиент не сталкивался с необходимостью увеличивать запланированный бюджет на строительство — <strong>СОЛОМОН подстраивается под ваши возможности и находит оптимальное решение</strong> для удовлетворения вашего запроса в рамках исходных возможностей.</li>
+                    <li class="totem__col-desciption totem-li-2" data-aos="fade-up"><strong>Мы напрямую связываем клиентов с заводом-изготовителем стенокомплекта,</strong> который начинает работу по частичной предоплате.</li>
+                    <li class="totem__col-desciption totem-li-2" data-aos="fade-up"><strong>В то же время мы рассчитываем подробную смету: стоимость работ и материалов.</strong> На этом этапе мы сравниваем полученную сумму с вашим бюджетом и действуем в зависимости от обстоятельств: можем уменьшить площадь, изменить конфигурацию дома или заменить некоторые материалы.</li>
+                    <li class="totem__col-desciption totem-li-2" data-aos="fade-up">Один из наших принципов заключается в том, чтобы клиент не сталкивался с необходимостью увеличивать запланированный бюджет на строительство — <strong>СОЛОМОН подстраивается под ваши возможности и находит оптимальное решение</strong> для удовлетворения вашего запроса в рамках исходных возможностей.</li>
                   </ul>
                 </div>
               </div>
               <div class="totem__row">
-                <div class="totem__row-box row-box-1">
+                <div class="totem__row-box row-box-1" data-aos="fade-up">
                   <strong>Само строительство происходит в два этапа, каждый из которых осуществляется по предоплате:</strong>
                 </div>
-                <div class="totem__row-box row-box-2">
+                <div class="totem__row-box row-box-2" data-aos="fade-up">
                   <p><strong>первый</strong> — в размере около 40% от общей сметы,</p>
                   <p><strong>второй</strong> — около 30%. По завершении работ и подписании актов об их выполнении вносятся оставшиеся 30%</p>
                 </div>
-                <div class="totem__row-box row-box-3">
+                <div class="totem__row-box row-box-3" data-aos="fade-up">
                   <p><strong>Гарантия на материалы от завода- изготовителя — 5 лет.</strong> СОЛОМОН также предоставляет <strong>2 года гарантийного обслуживания</strong> на собственные строительные работы.</p>
                 </div>
               </div>
@@ -389,12 +390,12 @@
           <div class="case__img">
             <img src="assets/images/case.jpg" alt="">
           </div>
-          <button class="case__splide-row">
+          <a class="case__splide-row" href="case.html#privacy">
             <div class="case__splide-row-cub">
               <div class="case__splide-cubs"></div>
             </div>
             ПОДРОБНЫЙ КЕЙС
-          </button>
+          </a>
         </div>
       </section>
       <section class="contact">
@@ -478,8 +479,35 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__overlay">
+        <div class="modal__inner">
+          <div class="modal__window">
+            <div class="modal__wrap">
+              <h3><strong>Оставьте свои данные — и мы свяжемся с вами,</strong> чтобы обсудить вашу ситуацию и возможные решения.</h3>
+              <form class="modal__form" action="">
+                <label class="modal__form-label" for="">
+                  <input class="modal__form-input" type="text" required placeholder="ФИО">
+                </label>
+                <label class="modal__form-label" for="">
+                  <input class="modal__form-input" type="tel" required placeholder="+7 (900) 987 1211">
+                </label>
+                <label class="modal__form-label" for="">
+                  <input class="modal__form-input" type="email" required placeholder="Почта">
+                </label>
+                <button class="modal__form-button">Отправить заявку</button>
+                <p class="modal__form-privacy">
+                  Нажимая <strong>ОТПРАВИТЬ ЗАЯВКУ</strong> вы соглашаетесь с политикой конфиденциальности
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="src/js/jquery-3.7.1.min.js"></script>
+  <script src="src/js/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="src/js/splide.min.js"></script>
   <script src="assets/js/index.js"></script>
