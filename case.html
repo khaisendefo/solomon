@@ -313,18 +313,19 @@
                 </div>
                 <div class="contact__right">
                   <p class="contact__right-description"><strong>Оставьте свои данные — и мы свяжемся с вами,</strong> чтобы обсудить вашу ситуацию и возможные решения.</p>
-                  <form class="contact__form" action="">
+                  <form class="contact__form formweb3" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="03f9a635-8a58-4757-a9c9-ae978854e971">
                     <label class="contact__form-label" for="name">
                       <span>Имя, Фамилия</span>
-                      <input class="contact__form-input" name="name" type="text" required>
+                      <input class="contact__form-input" name="Имя" type="text" required>
                     </label>
                     <label class="contact__form-label" for="tel">
                       <span>Телефон</span>
-                      <input class="contact__form-input" name="tel" type="tel" required>
+                      <input class="contact__form-input" name="Телефон" type="tel" required>
                     </label>
                     <label class="contact__form-label" for="mail">
                       <span>Почта</span>
-                      <input class="contact__form-input" name="mail" type="email" required>
+                      <input class="contact__form-input" name="Почта" type="email" required>
                     </label>
                     <button class="contact__form-button" type="submit">Оставьте заявку</button>
                     <p class="contact__form-privacy">Нажимая <strong>ОСТАВИТЬ ЗАЯВКУ</strong> вы соглашаетесь с политикой конфиденциальности</p>
@@ -384,17 +385,18 @@
           <div class="modal__window">
             <div class="modal__wrap">
               <h3><strong>Оставьте свои данные — и мы свяжемся с вами,</strong> чтобы обсудить вашу ситуацию и возможные решения.</h3>
-              <form class="modal__form" action="">
+              <form class="modal__form formweb3" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="03f9a635-8a58-4757-a9c9-ae978854e971">
                 <label class="modal__form-label" for="">
-                  <input class="modal__form-input" type="text" required placeholder="ФИО">
+                  <input class="modal__form-input" type="text" name="Имя" required placeholder="ФИО">
                 </label>
                 <label class="modal__form-label" for="">
-                  <input class="modal__form-input" type="tel" required placeholder="+7 (900) 987 1211">
+                  <input class="modal__form-input" type="tel" name="Телефон" required placeholder="+7 (900) 987 1211">
                 </label>
                 <label class="modal__form-label" for="">
-                  <input class="modal__form-input" type="email" required placeholder="Почта">
+                  <input class="modal__form-input" type="email" name="Почта" required placeholder="Почта">
                 </label>
-                <button class="modal__form-button">Отправить заявку</button>
+                <button class="modal__form-button" type="submit">Отправить заявку</button>
                 <p class="modal__form-privacy">
                   Нажимая <strong>ОТПРАВИТЬ ЗАЯВКУ</strong> вы соглашаетесь с политикой конфиденциальности
                 </p>

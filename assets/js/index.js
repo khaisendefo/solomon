@@ -69,26 +69,45 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function() {
   var openModalButtons = document.querySelectorAll(".open-modal");
   var modal = document.querySelector(".modal");
-  var modalOverlay = document.querySelector(".modal__overlay");
-  openModalButtons.forEach(function(button) {
-      button.addEventListener("click", function() {
-          modal.style.display = "block";
-      });
-  });
-  modalOverlay.addEventListener("click", function() {
-      modal.style.display = "none";
-  });
-  function closeModalOnEsc(event) {
-      if (event.key === "Escape") {
-          modal.style.display = "none";
-          document.removeEventListener("keydown", closeModalOnEsc);
-      }
-  }
+
   openModalButtons.forEach(function(button) {
       button.addEventListener("click", function() {
           modal.style.display = "block";
           document.addEventListener("keydown", closeModalOnEsc);
       });
   });
+
+  function closeModalOnEsc(event) {
+      if (event.key === "Escape") {
+          modal.style.display = "none";
+          document.removeEventListener("keydown", closeModalOnEsc);
+      }
+  }
 });
 
+var forms = document.querySelectorAll('.formweb3');
+forms.forEach(function(form) {
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        var formData = new FormData(this);
+        fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Ошибка отправки данных: " + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            alert("Данные успешно отправлены!");
+            console.log(data);
+            this.reset();
+        })
+        .catch(error => {
+            alert("Ошибка отправки данных: " + error.message);
+            console.error(error);
+        });
+    });
+});
