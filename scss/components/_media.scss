@@ -38,6 +38,66 @@
   .footer__logo img {
     width: 100px;
   }
+  .advantages {
+    padding: 50px 0;
+    &__flaw {
+      flex-direction: column;
+      &-grid {
+        margin-top: 25px;
+      }
+    }
+    & .advantages-name {
+      max-width: 100%;
+    }
+    &__timber {
+      flex-direction: column;
+      &-grid {
+        margin-top: 25px;
+      }
+    }
+    & .advantages-last-list {
+      margin-left: 25px;
+    }
+    &__myths { 
+      &-name {
+        margin-bottom: 15px;
+      }     
+      &-grid {
+        flex-direction: column;
+      }
+      & .one-box, .two-box, .three-box {
+        width: 100%;
+        margin: 0;
+      }
+      &-box {
+        height: auto;
+        padding: 25px;
+      }
+      & .two-box {
+        margin: 25px 0;
+      }
+      &-row {
+        flex-direction: column;
+        padding: 25px;
+        gap: 25px;
+        &__description {
+          max-width: 100%;
+        }
+      }
+      & .advantages__myths-row_description {
+        max-width: 100%;
+      }
+    }
+  }
+  .services {
+    padding: 50px 0;
+    &__wrap {
+      padding: 50px 0;
+    }
+  }
+  .section-backround {
+    height: 700px;
+  }
 }
 @media (max-width: 800px) {
   .header {
@@ -247,6 +307,154 @@
       padding: 15px;
     }
   }
+  .advantages {
+    &__timber {
+      margin-bottom: 40px;
+      &-grid {
+        flex-direction: column;
+      }
+      & li {
+        max-width: 100%;
+        font-size: 15px;
+      }
+    }
+    & .advantages-last-list {
+      margin: 25px 0 0;
+    }
+    &__flaw {
+      margin-bottom: 40px;
+      &-grid {
+        flex-direction: column;
+      }
+      & p {
+        max-width: 100%;
+        font-size: 15px;
+      }
+    }
+    &__myths {
+      &-name .advantages-name {
+        margin: 0;
+      }
+      &-box {
+        & p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .services {
+    &__info {
+      &-title {
+        font-size: 30px;
+        line-height: 23px;
+      }
+      &-group {
+        flex-direction: column;
+        gap: 25px;
+        & p {
+          max-width: 100%;
+          font-size: 15px;
+        }
+      }
+      & .first-description {
+        margin: 0;
+      }
+    }
+  }
+  .service__splide {
+   
+  }
+  .slide-one {
+    padding: 25px;
+    & p {
+      font-size: 15px;
+    }
+    & .slide-one-subtitle {
+      margin-bottom: 15px;
+    }
+    & .slide-one-col {
+      flex-direction: column;
+      gap: 15px;
+    }
+    & .slide-one-description {
+      margin-bottom: 15px;
+    } .slide-one-prise {
+      margin-bottom: 15px;
+    }
+    & .slide-one-descipt {
+      margin: 0;
+      max-width: 100%;
+    } .slide-one-descipti {
+      max-width: 100%;
+    }
+  }
+
+  .slide-two {
+    padding: 25px;
+    & p {
+      font-size: 15px;
+    }
+    & .slide-two-subtitle {
+      margin-bottom: 15px;
+    }
+    & .slide-two-description {
+      margin-bottom: 15px;
+    }
+    & .slide-two-warning {
+      margin-bottom: 15px;
+    } 
+    & .slide-two-prise {
+      margin-bottom: 15px;
+    }
+    & .slide-two-included {
+      margin-bottom: 15px;
+    }
+    & .slide-two-col {
+      flex-direction: column;
+      & .services-list-one {
+        max-width: 100%;
+      }
+      & .services-list-two {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .slide-three {
+    padding: 25px;
+    & .slide-three-subtitle {
+      margin-bottom: 15px;
+    }
+    & .slide-three-description {
+      margin-bottom: 15px;
+    }
+    & .slide-three-prise {
+      margin-bottom: 15px;
+    }
+    & .slide-three-included {
+      margin-bottom: 15px;
+    } .slide-three-col {
+      gap: 15px;
+    }
+  }
+  .splide__slide {
+    overflow: hidden;
+  }
+  .slide-four {
+    padding: 25px;
+    & .slide-four-subtitle {
+      margin-bottom: 15px;
+    }
+    & .slide-four-description {
+      margin-bottom: 15px;
+    }
+    & .slide-four-prise {
+      margin-bottom: 15px;
+    }
+    & .slide-four-included {
+      margin-bottom: 15px;
+    }
+  }
 }
 @media (max-width: 500px) {
   .totem {
@@ -264,4 +472,14 @@
       max-width: 100%;
     }
   }
+  .section-backround {
+    height: 400px;
+  }
+}
+@media (max-width: 400px) {
+   .slide-three {
+    & .slide-three-col {
+      flex-direction: column;
+    }
+   }
 }
