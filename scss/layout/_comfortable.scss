@@ -43,6 +43,8 @@
   &-row {
     margin-top: 23px;
     display: flex;
+    justify-content: space-between;
+    gap: 15px;
   }
   & .comfortable-col-1 {
     max-width: 560px;

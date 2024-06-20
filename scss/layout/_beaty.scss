@@ -43,10 +43,11 @@
   &-row {
     margin-top: 23px;
     display: flex;
+    justify-content: space-between;
+    gap: 15px;
   }
   & .beaty-col-1 {
-    max-width: 560px;
-    margin-right: 41px;
+    width: 560px;
     & .beaty__info-description {
       color: #000;
       font-size: 15px;

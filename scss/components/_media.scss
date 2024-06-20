@@ -4,6 +4,114 @@
     text-align-last: center;
   }
 }
+@media (max-width: 1150px) {
+  .beaty {
+    padding-bottom: 50px;
+    &__info {
+      &-title {
+        max-width: 100%;
+      }
+    }
+    & .beaty-col-1 {
+      max-width: 100%;
+      width: auto;
+      & .beaty__info-img {
+        margin: 25px 0;
+        max-width: 900px;
+      }
+    }
+    & .beaty-col-2 {
+      max-width: 100%;
+      & .beaty__info-img {
+        max-width: 900px;
+      }
+    }
+  }
+  .beaty__info-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .comfortable {
+    padding-bottom: 50px;
+    &__info {
+      &-row {
+        flex-direction: column;
+      }
+    }
+    & .comfortable-col-1 {
+      max-width: 100%;
+      margin: 0;
+      width: auto;
+      & .comfortable__info-img {
+        max-width: 900px;
+        margin: 25px 0;
+      }
+    }
+    & .comfortable-col-2 {
+      max-width: 100%;
+      & .comfortable__info-description {
+        max-width: 100%;
+      }
+      & .comfortable__info-img {
+        margin: 25px 0;
+        max-width: 900px;
+      }
+    }
+  }
+  .privacy {
+    padding-bottom: 50px;
+    &__info {
+      &-row {
+        flex-direction: column;
+      }
+    }
+    & .privacy-col-1 {
+      max-width: 100%;
+      margin: 0;
+      & .privacy__info-img {
+        max-width: 900px;
+        margin: 25px 0;
+      }
+    }
+    & .privacy-col-2 {
+      max-width: 100%;
+      margin-top: 25px;
+      & .privacy__info-img {
+        margin: 25px 0;
+        max-width: 900px;
+      }
+      & .privacy__info-description {
+        max-width: 100%;
+      }
+    }
+  }
+  .expand {
+    padding-bottom: 50px;
+    &__info {
+      &-row {
+        flex-direction: column;
+      }
+    }
+    & .expand-col-1 {
+      max-width: 100%;
+      margin: 0;
+      & .expand__info-img {
+        max-width: 900px;
+        margin: 25px 0;
+      }
+    }
+    & .expand-col-2 {
+      max-width: 100%;
+      & .expand__info-img {
+        max-width: 900px;
+        margin: 25px 0;
+      }
+      & .expand__info-description {
+        max-width: 900px;
+      }
+    }
+  }
+}
 @media (max-width: 1050px) {
   .hero__top {
     flex-direction: column;
@@ -15,6 +123,9 @@
   }
   .hero__group {
     margin: 0 0 20px;
+  }
+  .beaty {
+    padding: 50px 0;
   }
 }
 @media (max-width: 1000px) {
@@ -97,6 +208,43 @@
   }
   .section-backround {
     height: 700px;
+  }
+  .home {
+    padding-bottom: 50px;
+  }
+  .grid {
+    padding: 50px 0;
+  }
+  .offers {
+    padding: 50px 0;
+    &__search-text {
+      flex-direction: column;
+      gap: 25px;
+    }
+    & .off-des-1, .off-des-2 {
+      max-width: 100%;
+    }
+    &__budget {
+      padding: 40px 0;
+      &-item {
+        max-width: 100%;
+      }
+      &-vis {
+        flex-direction: column;
+      }
+      &-col {
+        margin: 25px 0 0;
+      }
+    }
+    &__dream {
+      &-text {
+        flex-direction: column;
+        gap: 25px;
+      }
+      & .dr-des-1, .dr-des-2 {
+        max-width: 100%;
+      }
+    }
   }
 }
 @media (max-width: 800px) {
@@ -197,6 +345,81 @@
     }
     &__social {
       margin: 25px 0;
+    }
+  }
+  .home {
+    &__top {
+      &-title {
+        font-size: 30px;
+        max-width: 300px;
+        line-height: 40px;
+      }
+    }
+  }
+  .beaty {
+    &__top {
+      &-title {
+        font-size: 30px;
+        max-width: 300px;
+        line-height: 40px;
+      }
+    }
+  }
+  .comfortable {
+    &__top {
+      &-title {
+        font-size: 30px;
+        max-width: 300px;
+        line-height: 40px;
+      }
+    }
+  }
+  .privacy {
+    &__top {
+      &-title {
+        font-size: 30px;
+        max-width: 300px;
+        line-height: 40px;
+      }
+    }
+  }
+  .expand {
+    &__top {
+      &-title {
+        font-size: 30px;
+        max-width: 300px;
+        line-height: 40px;
+      }
+    }
+  }
+  .offers {
+    &__search {
+      &-title {
+        font-size: 25px;
+        margin-bottom: 20px;
+        line-height: 40px;
+      }
+    }
+    &__budget {
+      &-title {
+        font-size: 25px;
+        margin-bottom: 20px;
+        line-height: 40px;
+      }
+      &-text {
+        flex-direction: column;
+        gap: 25px;
+      }
+      & .bud-des-1, .bud-des-2 {
+        max-width: 100%;
+      }
+    }
+    &__dream {
+      &-title {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -388,7 +611,6 @@
       max-width: 100%;
     }
   }
-
   .slide-two {
     padding: 25px;
     & p {
@@ -419,7 +641,6 @@
       }
     }
   }
-
   .slide-three {
     padding: 25px;
     & .slide-three-subtitle {
@@ -453,6 +674,119 @@
     }
     & .slide-four-included {
       margin-bottom: 15px;
+    }
+  }
+  .home {
+    &__top {
+      flex-direction: column;
+      &-title {
+        max-width: 100%;
+        font-size: 25px;
+      }
+      &-description {
+        margin: 15px 0 0;
+        font-size: 15px;
+      }
+    }
+  }
+  .beaty {
+    &__top {
+      &-group {
+        flex-direction: column;
+      }
+      &-title {
+        max-width: 100%;
+        font-size: 25px;
+      }
+      &-description {
+        margin: 15px 0 0;
+        max-width: 100%;
+      }
+    }
+    &__info {
+      &-title {
+        font-size: 20px;
+      }
+    }
+    & p {
+      font-size: 15px;
+    }
+  }
+  .comfortable {
+    &__top {
+      &-group {
+        flex-direction: column;
+      }
+      &-title {
+        max-width: 100%;
+        font-size: 25px;
+      }
+      &-description {
+        margin: 15px 0 0;
+        max-width: 100%;
+      }
+    }
+    &__info {
+      &-title {
+        font-size: 20px;
+      }
+    }
+    & p {
+      font-size: 15px;
+    }
+  }
+  .privacy {
+    &__top {
+      &-group {
+        flex-direction: column;
+      }
+      &-title {
+        max-width: 100%;
+        font-size: 25px;
+      }
+      &-description {
+        margin: 15px 0 0;
+        max-width: 100%;
+      }
+    }
+    &__info {
+      &-title {
+        font-size: 20px;
+      }
+    }
+    & p {
+      font-size: 15px;
+    }
+  }
+  .expand {
+    &__top {
+      &-group {
+        flex-direction: column;
+      }
+      &-title {
+        max-width: 100%;
+        font-size: 25px;
+      }
+      &-description {
+        margin: 15px 0 0;
+        max-width: 100%;
+      }
+    }
+    &__info {
+      &-title {
+        font-size: 20px;
+      }
+    }
+    & p {
+      font-size: 15px;
+    }
+  }
+  .case__backround {
+    height: 450px;
+  }
+  .offers {
+    & p, li {
+      font-size: 15px;
     }
   }
 }
