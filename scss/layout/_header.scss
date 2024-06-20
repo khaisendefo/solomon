@@ -27,6 +27,9 @@
       text-transform: uppercase;
     }
   }
+  & .header__button {
+    display: none;
+  }
 }
 .header__button {
   color: var(--dark-col);

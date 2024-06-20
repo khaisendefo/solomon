@@ -1,0 +1,267 @@
+@media (max-width: 1193px) {
+  .contact__title {
+    text-align: center;
+    text-align-last: center;
+  }
+}
+@media (max-width: 1050px) {
+  .hero__top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__description {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero__group {
+    margin: 0 0 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero {
+    height: 750px;
+    overflow: hidden;
+  }
+  .founder {
+    &__body {
+      flex-direction: column;
+    }
+    &__person {
+      &-img {
+        max-width: 550px;
+      }
+    }
+    &__text {
+      margin: 25px 0 0;
+    }
+  }
+  .footer__logo img {
+    width: 100px;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    margin-bottom: 25px;
+  }
+  .hero {
+    height: 550px;
+    overflow: hidden;
+    &__inner {
+      height: 100%;
+      background: transparent;
+      position: relative;
+      &::before {
+        content: '';
+        background: url('../images/hero-bgc.png') no-repeat; 
+        width: 783px; height: 570px;
+        background-position: center;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        bottom: -110px;
+        z-index: 2;
+      }
+    }
+    &__group {
+      position: relative;
+      z-index: 5;
+      &-title {
+        max-width: 650px;
+        & img {
+          width: 100%;
+        }
+      }
+      &-subtitle {
+        max-width: 650px;
+        & img {
+          width: 100%;
+        }
+      }
+    }
+    &__description {
+      position: relative;
+      z-index: 5;
+    }
+  }
+  .totem {
+    padding: 50px 0;
+    & .col-1 {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    & .col-1 .totem__col-item {
+      margin: 0 0 25px;
+    }
+    & .col-2 .totem__col-item {
+      margin: 0 0 25px;
+    }
+    & .totem-col-list-1 {
+      margin-right: 25px;
+    }
+    & .col-2 {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    &__row {
+      padding: 15px;
+      flex-direction: column;
+      & .row-box-1, .row-box-2, .row-box-3 {
+        max-width: 100%;
+      }
+      & .row-box-2 {
+        margin: 25px 0;
+      }
+    }
+  }
+  .case {
+    padding-bottom: 50px;
+  }
+  .contact {
+    padding: 50px 0;
+    &__title {
+      font-size: 30px;
+      line-height: 45px;
+      margin-bottom: 25px;
+    }
+    &__row {
+      margin-top: 25px;
+    }
+  }
+  .footer {
+    &__container {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__logo {
+      margin-bottom: 25px;
+    }
+    &__social {
+      margin: 25px 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+   .header {
+     &__left {
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+     }
+     &__nav {
+       display: none;
+     }
+     &__button {
+       display: none;
+     }
+     & .header__toggle {
+        display: block;
+     }
+     & .header__nav.active {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0; right: 0;
+        background: rgba(0, 0, 0, 0.833);
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .header__nav-link {
+          color: #fff;
+          font-size: 21px;
+        }
+        & .header__nav-list {
+          flex-direction: column;
+        }
+        & .header__nav-item {
+          margin: 0 0 35px;
+          &:last-child {
+            margin: 0;
+          }
+        }
+     }
+   }
+   .contact {
+    &__row {
+      flex-direction: column;
+    }
+    &__info {
+      max-width: 100%;
+      &-social {
+        margin-bottom: 25px;
+      }
+    }
+    &__right {
+      max-width: 100%;
+      &-description {
+        max-width: 100%;
+      }
+    }
+   }
+}
+@media (max-width: 600px) {
+  .hero {
+    &__description {
+      font-size: 15px;
+    }
+  }
+  .founder {
+    &__line {
+      margin-bottom: 25px;
+    }
+    & p {
+      font-size: 15px;
+    }
+  }
+  .gallery {
+    padding-bottom: 25px;
+    &__slider {
+      height: auto;
+      max-width: auto;
+      margin-bottom: 25px;
+      &-img {
+        overflow: hidden;
+      }
+    }
+  }
+  .totem {
+    &__top {
+      margin-bottom: 25px;
+    }
+    &__top-title {
+      font-size: 30px;
+      line-height: 45px;
+    }
+  }
+  .case {
+    &__splide-row {
+      margin-top: 25px;
+    }
+  }
+  .contact {
+    &__title {
+      font-size: 25px;
+    }
+    &__box {
+      padding: 15px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .totem {
+    & .col-1 .totem__col-box {
+      flex-direction: column;
+    }
+    & .col-1 .totem-col-list-1 {
+      max-width: 100%;
+      margin: 0;
+      & li {
+        max-width: 100%;
+      }
+    }
+    & .col-1 .totem-col-list-2 {
+      max-width: 100%;
+    }
+  }
+}
