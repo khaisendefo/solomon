@@ -92,3 +92,36 @@
     transform: translateY(100px);
   }
 }
+@media (max-width: 800px) {
+  .modal {
+    &__window {
+      width: 550px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .modal {
+    &__inner {
+      padding: 0 15px;
+    }
+    &__window {
+      max-width: 550px;
+      width: 100%;
+      padding: 15px;
+    }
+  }
+}
+@media (max-width: 500px) {
+   .modal__window {
+     & h3 {
+       font-size: 13px;
+     }
+   }
+   .modal__form {
+    max-width: 330px;
+    margin: 0 auto;
+     & input, button {
+       width: 330px;
+     }
+   }
+}

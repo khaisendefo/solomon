@@ -69,14 +69,20 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function() {
   var openModalButtons = document.querySelectorAll(".open-modal");
   var modal = document.querySelector(".modal");
-
+  var modalOverlay = document.querySelector(".modal__overlay");
+  var modalWindow = document.querySelector(".modal__window");
   openModalButtons.forEach(function(button) {
       button.addEventListener("click", function() {
           modal.style.display = "block";
           document.addEventListener("keydown", closeModalOnEsc);
       });
   });
-
+  modalOverlay.addEventListener("click", function(event) {
+      if (!modalWindow.contains(event.target)) {
+          modal.style.display = "none";
+          document.removeEventListener("keydown", closeModalOnEsc);
+      }
+  });
   function closeModalOnEsc(event) {
       if (event.key === "Escape") {
           modal.style.display = "none";
@@ -110,4 +116,20 @@ forms.forEach(function(form) {
             console.error(error);
         });
     });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", function() {
+      if (window.pageYOffset > 300) {
+          scrollToTopBtn.style.display = "block";
+      } else {
+          scrollToTopBtn.style.display = "none";
+      }
+  });
+
+  scrollToTopBtn.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 });
